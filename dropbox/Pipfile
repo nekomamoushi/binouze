@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 droopy = {editable = true,path = "."}
+e1839a8 = {editable = true,path = "."}
 
 [packages]
 dropbox = "*"

@@ -1,12 +1,17 @@
 
 import argparse
 import os
-from pathlib import Path
+try:
+    from pathlib import Path
+except ImportError:
+    from pathlib2 import Path  # python 2 backport
 
 import dropbox
 
+
 TOKEN = ''
 TARGET_PATH = ''
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
